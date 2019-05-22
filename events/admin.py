@@ -6,13 +6,10 @@ from events.models import Event
 import datetime
 import calendar
 from django.urls import reverse
-from calendar import HTMLCalendar
 from django.utils.safestring import mark_safe
 
 from events.utils import EventCalendar
 
-
-# Register your models here.
 
 class EventAdmin(admin.ModelAdmin):
     list_display = ['day', 'start_time', 'end_time', 'notes']
